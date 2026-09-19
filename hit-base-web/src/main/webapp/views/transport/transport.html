@@ -34,7 +34,7 @@
                </div>
             </div>
           </div>
-          <hr>
+          <hr/>
 
           <div class="row" style="margin-bottom: 10px" ng-show="transport.disabled">
             <div class="col-md-12">
@@ -49,7 +49,7 @@
                 <div class="col-md-12" style="padding-top: 20px">
                   <div ng-show="selectedProtocol && selectedProtocol != null">
                     <h2>   <i class="fa fa-cog fa-fw"></i>  {{selectedProtocol.key | uppercase}} Configuration </h2>
-                    <hr>
+                    <hr/>
                     <div class="col-md-10">
                       <div>
                         <div ng-show="selectedProtocol.error && selectedProtocol.error !== null">
@@ -70,7 +70,7 @@
                                     <form name="sutInitiatorForm_{{dom}}_{{proto}}" id="sutInitiatorForm_{{dom}}_{{proto}}" novalidate="" class="form-horizontal">
                                       <div class="row">
                                         <div class="col-md-12">
-                                          <div compile="selectedProtocol['forms']['sutInitiatorForm']">
+                                          <div compile="selectedProtocol['forms']['sutInitiatorForm']"/>
                                         </div>
 
                                         <div class="col-md-12" ng-show="isAuthenticated()">
@@ -120,7 +120,7 @@
                                     <form name="taInitiatorForm_{{dom}}_{{proto}}" id="taInitiatorForm_{{dom}}_{{proto}}" novalidate="" class="form-horizontal">
                                       <div class="row">
                                         <div class="col-md-12">
-                                          <div compile="selectedProtocol['forms']['taInitiatorForm']">
+                                          <div compile="selectedProtocol['forms']['taInitiatorForm']"/>
                                         </div>
                                         <div class="col-md-12">
                                           <div class="form-group">

@@ -5,6 +5,8 @@ ENV JAVA_OPTS="-Xmx4096m -Xms4096m"
 COPY ./hit-base-web/target/gvt.war /usr/local/tomcat/webapps/gvt.war
 COPY ./dockerConfigs/webapp/context.xml /usr/local/tomcat/conf/context.xml
 COPY ./dockerConfigs/webapp/server.xml /usr/local/tomcat/conf/server.xml
+COPY ./dockerConfigs/webapp/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 
-CMD ["catalina.sh", "run"]
+CMD ["/entrypoint.sh"]
