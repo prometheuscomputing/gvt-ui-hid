@@ -27,8 +27,8 @@
             <button class="btn btn-cf-outline" ng-click="hasUrl = false; " ng-class="{'active':hasUrl === false}">Upload
             </button>
           </div>
-          <br>
-          <br>
+          <br/>
+          <br/>
 
           <div ng-if="hasUrl">
             <input required="" class="form-control" name="newDomainPath" id="newDomainPath" type="url" ng-model="document.path">
@@ -41,7 +41,7 @@
                     <i>({{accept}})</i>
                     <input type="file" accept="{{accept}}" nv-file-select="" uploader="documentUploader" style="display: none">
                   </label>
-                  <br>
+                  <br/>
                   <i ng-show="documentUploader.queue.length">
                         <span ng-show="documentUploader.queue[0].isSuccess"><i class="fa fa-check"></i></span>
 

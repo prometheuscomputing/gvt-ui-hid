@@ -295,6 +295,11 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
+          // The header carries an inline SVG (viewBox, gradientUnits, <stop/>).
+          // Keep attribute case and self-closing slashes, otherwise the
+          // minifier folds the shapes into each other and the mark is lost.
+          caseSensitive: true,
+          keepClosingSlash: true,
 //          collapseWhitespace: true,
 //          collapseBooleanAttributes: true,
 //          removeCommentsFromCDATA: true,
